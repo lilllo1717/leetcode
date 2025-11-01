@@ -31,11 +31,9 @@ class Solution:
             right-=1
     return quadruplets
 
-
 def main():
   sol = Solution()
   print(sol.searchQuadruplets([4, 1, 2, -1, 1, -3], 1))
   print(sol.searchQuadruplets([2, 0, -1, 1, -2, 2], 2))
-
 
 main()
