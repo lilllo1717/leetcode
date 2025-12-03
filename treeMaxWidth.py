@@ -22,7 +22,7 @@ class Solution:
         while que:
             levSize = len(que)
             minIndex = que[0].index
-            fist = 0
+            first = 0
             last = 0
             for i in range(levSize):
                 curr = que.popleft()
