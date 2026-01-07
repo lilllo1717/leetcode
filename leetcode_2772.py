@@ -24,7 +24,7 @@ class Solution:
             if i + k < n:
                 delta[i + k] += needed
 
-        return True
+        return True                                                         
 
 class Solution2:
     def checkArray(self, nums, k) -> bool:
