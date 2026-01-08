@@ -10,7 +10,7 @@ class Solution:
 
 
 class Solution2:
-    def stringShift(self, s: str, shift: List[List[int]]) -> str:
+    def stringShift(self, s, shift):
         n = len(s)
         net = 0
 
