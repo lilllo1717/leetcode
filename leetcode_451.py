@@ -1,4 +1,4 @@
-from collections import Counter
+from collections import Counter, OrderedDict
 from heapq import *
 
 class Solution:
@@ -19,7 +19,13 @@ class Solution:
         # print(final)
         return ''.join(final)
 
+    def frequencySort2(self, s):
+        mp = Counter(s)
+        r = OrderedDict(sorted(mp.items(), key=lambda x: x[1], reverse=True))
+        ss = ''.join([char * freq for char, freq in r.items()])
+        return ss
+
 
 if __name__ == '__main__':
     sol = Solution()
-    print(sol.frequencySort("cccaaa"))
+    print(sol.frequencySort2("cccaaa"))
